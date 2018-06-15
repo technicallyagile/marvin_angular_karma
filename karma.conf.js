@@ -15,6 +15,7 @@ module.exports = function(config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
+      require('karma-junit-reporter'),
     ],
 
     // list of files / patterns to load in the browser
@@ -23,7 +24,7 @@ module.exports = function(config) {
         './node_modules/angular-ui-router/release/angular-ui-router.js',
         './node_modules/angular-mocks/angular-mocks.js',
         './app/services/users/users.js',
-        './app.app.js',
+        './app/app.js',
         './app/services/users/users.spec.js'
     ],
 
@@ -42,12 +43,12 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'junit'],
     //reporters: ['spec', 'junit'],
 
-    //junitReporter: {
-    //    outputFile: 'test-results.xml'
-    //},
+    junitReporter: {
+        outputFile: 'test-results.xml'
+    },
 
     // web server port
     port: 9876,
