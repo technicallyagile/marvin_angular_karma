@@ -51,9 +51,9 @@ describe('Users factory', function() {
       		expect(Users.all).toBeDefined();
     	});
 
-    	it('should return a hard-coded user list', function() {
-    		expect(Users.all()).toEqual(userList);
-    	});
+    	//it('should return a hard-coded user list', function() {
+    	//	expect(Users.all()).toEqual(userList);
+    	//});
 
   	});
 
