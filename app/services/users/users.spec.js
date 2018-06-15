@@ -55,9 +55,6 @@ describe('Users factory', function() {
     		expect(Users.all()).toEqual(userList);
     	});
 
-    	it('should fail', function() {
-    		expect().toEqual(true);
-    	});
   	});
 
 });
