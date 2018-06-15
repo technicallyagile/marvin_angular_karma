@@ -20,8 +20,12 @@
 	      		expect(Marvin.talk).toBeDefined();
 	    	});
 
-	    	it('should return a hard-coded user list', function() {
+	    	it('Most statements meet a short, uninterested response', function() {
 	    		expect(Marvin.talk("Hello Marvin")).toEqual("Whatever.");
+	    	});
+
+	    	it('Questions are met with flippant answers', function() {
+	    		expect(Marvin.talk("Are you hungry?")).toEqual("I don't care.");
 	    	});
 
   		});

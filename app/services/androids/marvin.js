@@ -7,8 +7,11 @@
   	
   	var Marvin = {};
 
-  	Marvin.talk = function() {
-    	return "Whatever.";
+  	Marvin.talk = function(statement) {
+  		if (statement.endsWith('?'))
+  			return "I don't care.";
+  		else
+    		return "Whatever.";
     }
 
     	return Marvin;
