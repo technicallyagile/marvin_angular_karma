@@ -8,7 +8,7 @@
   	var Marvin = {};
 
   	Marvin.talk = function() {
-    	return "";
+    	return "Whatever.";
     }
 
     	return Marvin;
