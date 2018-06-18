@@ -11,10 +11,10 @@
   		var response = "Whatever.";
   		if (!statement)
   			response = "Fine! Waste My Time!";
-  		else if (statement.endsWith('?'))
-  			response = "I don't care.";
   		else if (statement.toUpperCase() === statement)
   			response = "I'm right here, you know.";
+  		else if (statement.endsWith('?'))
+  			response = "I don't care.";
   		
     	return response;
     }
