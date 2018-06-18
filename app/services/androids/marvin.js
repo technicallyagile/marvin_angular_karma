@@ -8,14 +8,15 @@
   	var Marvin = {};
 
   	Marvin.talk = function(statement) {
+  		var response = "Whatever.";
   		if (!statement)
-  			return "Fine! Waste My Time!";
-  		if (statement.toUpperCase() === statement)
-  			return "I'm right here, you know.";
-  		if (statement.endsWith('?'))
-  			return "I don't care.";
-  		else
-    		return "Whatever.";
+  			response = "Fine! Waste My Time!";
+  		else if (statement.endsWith('?'))
+  			response = "I don't care.";
+  		else if (statement.toUpperCase() === statement)
+  			response = "I'm right here, you know.";
+  		
+    	return response;
     }
 
     	return Marvin;
