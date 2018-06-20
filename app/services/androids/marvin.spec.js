@@ -36,9 +36,9 @@
 	    		expect(Marvin.talk("YOU ARE A JERK!")).toEqual("I'm right here, you know.");
 	    	});
 
-	    	it('yelling questions are questions', function() {
-	    		expect(Marvin.talk("WILL YOU STOP BEING A JERK?")).toEqual("I don't care.");
-	    	});
+	    	//it('yelling questions are questions', function() {
+	    	//	expect(Marvin.talk("WILL YOU STOP BEING A JERK?")).toEqual("I don't care.");
+	    	//});
 
   		});
 
